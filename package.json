@@ -1,9 +1,28 @@
 {
   "name": "drizzle-turso",
+  "version": "0.2.0",
   "module": "src/index.ts",
   "type": "module",
+  "description": "Push drizzle-orm schemas to a Turso database programmatically without the need of generating migrations",
+  "author": {
+    "email": "martoxdlol@gmail.com",
+    "name": "Tomás Cichero"
+  },
+  "license": "MIT",
+  "keywords": [
+    "drizzle",
+    "turso",
+    "orm",
+    "ci",
+    "migrations",
+    "database",
+    "schema"
+  ],
   "devDependencies": {
     "@types/bun": "latest"
+  },
+  "exports": {
+    ".": "./src/index.ts"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"

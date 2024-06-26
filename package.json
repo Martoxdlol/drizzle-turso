@@ -1,0 +1,16 @@
+{
+  "name": "drizzle-turso",
+  "module": "src/index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.7.0",
+    "drizzle-orm": "^0.31.2",
+    "nanoid": "^5.0.7"
+  }
+}

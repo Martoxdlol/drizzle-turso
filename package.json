@@ -1,6 +1,6 @@
 {
   "name": "drizzle-turso",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "module": "src/index.ts",
   "type": "module",
   "description": "Push drizzle-orm schemas to a Turso database programmatically without the need of generating migrations",
@@ -25,11 +25,11 @@
     ".": "./src/index.ts"
   },
   "peerDependencies": {
+    "drizzle-orm": "^0.31.2",
     "typescript": "^5.0.0"
   },
   "dependencies": {
     "@libsql/client": "^0.7.0",
-    "drizzle-orm": "^0.31.2",
     "nanoid": "^5.0.7"
   }
 }

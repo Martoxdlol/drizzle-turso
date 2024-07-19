@@ -73,6 +73,10 @@ export function definitionsFromDrizzleSchema(schema: Record<string, unknown>): D
                 })
             }
         }
+
+        for (const unique of config.uniqueConstraints) {
+            t.createUnique(unique.columns.map((c) => (c as SQLiteColumn).name))
+        }
     }
 
     for (const table of tables) {
